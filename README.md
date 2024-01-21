@@ -1,6 +1,6 @@
 # Laptop Scraper
 
-Welcome to the Laptop Scraper repository! This project automates the process of searching and comparing laptop prices on popular e-commerce platforms Amazon and Daraz. Utilizing Python, Requests, BeautifulSoup, and Airflow, it streamlines the task of finding affordable laptops.
+Welcome to the Laptop Scraper repository! This project automates the process of searching and comparing laptop prices on popular e-commerce platforms Telemart and Daraz in Pakistan🇵🇰. Utilizing Python, Requests, BeautifulSoup, and Airflow, it streamlines the task of finding affordable laptops.
 
 <img src="/process-imgs/laptop-scraper-logo.gif" width="100%" height="400px" />
 
@@ -10,7 +10,7 @@ Welcome to the Laptop Scraper repository! This project automates the process of 
 
 ### Core Features
 
-1. **Dynamic E-commerce Search**: After user input, Initiate a Laptop search on Amazon and Daraz.
+1. **Dynamic E-commerce Search**: After user input, Initiate a Laptop search on Telemart and Daraz.
 
 2. **Automated Price Comparison**: The scraper automates laptop searches and compares prices across multiple listings.
 
@@ -24,7 +24,7 @@ This repository contains the code and configuration for the Laptop Scraper proje
 
 ### 1. E-commerce Search
 
-- User enter its desired laptop name, Initiating a Laptop search on Amazon and Daraz (Only first page).
+- User enter its desired laptop name, Initiating a Laptop search on Telemart and Daraz (Only first page).
 
 ### 2. Web Scraping
 
@@ -53,7 +53,7 @@ This repository contains the code and configuration for the Laptop Scraper proje
     - `laptop-scraper-process.jpg`: Process/Roadmap image for the project.
   - `main.py`: Contains code, generally calling other classes.
   - `code/`: Conatins all the code files.
-    - `amazon_scraper.py`: Conatins code to scrape from Amazon.
+    - `telemart_scraper.py`: Conatins code to scrape from Telemart.
     - `daraz_scraper.py`: Conatins code to scrape from Daraz.
     - `extract.py`: Contains code to call both scrapers.
     - `transform.py`: Contains code to implement Extract, Transform and Load.
