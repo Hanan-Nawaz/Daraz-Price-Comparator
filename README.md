@@ -2,7 +2,7 @@
 
 Welcome to the Laptop Scraper repository! This project automates the process of searching for and comparing laptop prices on popular e-commerce platforms like Amazon and Daraz. Utilizing Python, Requests, BeautifulSoup, and Airflow, it streamlines the task of finding affordable laptops.
 
-<img src="/process-imgs/laptop-scraper-logo.gif" width="100%" height="550px" />
+<img src="/process-imgs/laptop-scraper-logo.gif" width="100%" height="400px" />
 
 ## Overview
 
