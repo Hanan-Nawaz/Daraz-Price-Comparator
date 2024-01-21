@@ -48,15 +48,16 @@ This repository contains the code and configuration for the Laptop Scraper proje
 ## Repository Structure
 
 - `laptop_scraper/`: Contains the code and configuration for the Laptop Scraper project.
-  - `process-imgs`: Contains helping images related to the project.
+  - `process-imgs/`: Contains helping images related to the project.
     - `laptop-scraper-logo.jpg`: Logo image for the project.
     - `laptop-scraper-process.jpg`: Process/Roadmap image for the project.
   - `main.py`: Contains code, generally calling other classes.
-  - `amazon_scraper.py`: Conatins code to scrape from Amazon.
-  - `daraz_scraper.py`: Conatins code to scrape from Daraz.
-  - `extract.py`: Contains code to call both scrapers.
-  - `transform.py`: Contains code to implement Extract, Transform and Load.
-  - `load_to_mongodb.py`: Conatins code to load data into MongoDb using PyMongo.
+  - `code/`: Conatins all the code files.
+    - `amazon_scraper.py`: Conatins code to scrape from Amazon.
+    - `daraz_scraper.py`: Conatins code to scrape from Daraz.
+    - `extract.py`: Contains code to call both scrapers.
+    - `transform.py`: Contains code to implement Extract, Transform and Load.
+    - `load_to_mongodb.py`: Conatins code to load data into MongoDb using PyMongo.
   - `README.md`: You are here, providing an overview of the project.
 
 ## Getting Started
