@@ -2,9 +2,11 @@
 
 Welcome to the Laptop Scraper repository! This project automates the process of searching for and comparing laptop prices on popular e-commerce platforms like Amazon and Daraz. Utilizing Python, Requests, BeautifulSoup, and Airflow, it streamlines the task of finding affordable laptops.
 
+<img src="/laptop_scraper/process-imgs/laptop-scraper-logo.jpg" width="100%" height="300px" />
+
 ## Overview
 
-<img src="/laptop_scraper/laptop-scraper-logo.jpg" width="100%" height="300px" />
+<img src="/laptop_scraper/process-imgs/laptop-scraper-process.jpg" width="100%" height="300px" />
 
 ### Core Features
 
@@ -35,6 +37,12 @@ This repository contains the code and configuration for the Laptop Scraper proje
 ### 4. Airflow Integration
 
 - Airflow is configured to automate the entire process at scheduled intervals.
+
+### 5. Data Storage
+
+- MongoDb is used to Store Transformed Data.
+
+<img src="/laptop_scraper/process-imgs/laptop-scraper-ERD.png" width="100%" height="590px" />
 
 ## Technology Stack
 
