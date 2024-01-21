@@ -45,7 +45,7 @@ This repository contains the code and configuration for the Laptop Scraper proje
 - **Automation**: Apache Airflow
 - **Data Storage**: Structured format for extracted data (MongoDb)
 
-## Repository Structure
+## File Structure
 
 - `laptop_scraper/`: Contains the code and configuration for the Laptop Scraper project.
   - `process-imgs/`: Contains helping images related to the project.
