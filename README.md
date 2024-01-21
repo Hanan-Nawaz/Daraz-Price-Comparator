@@ -86,8 +86,3 @@ This project is licensed under the [MIT License](LICENSE).
 [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://hanannawaz.com/)
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/abdulhanan0/)
 [![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/HananNawaz0/)
-
-<h3 align="left">Let's Talk about your project 😃 </h3>
-<p align="center">
-<a href="https://www.upwork.com/freelancers/~yourupworkprofile"><img src="https://img.shields.io/badge/-Abdul%20Hanan%20Nawaz-6fda44?style=flat&logo=upwork&logoColor=white"/></a>
-<a href="https://www.fiverr.com/yourfiverrprofile"><img src="https://img.shields.io/badge/-Abdul%20Hanan%20Nawaz-00b22d?style=flat&logo=Fiverr&logoColor=white"/></a>
