@@ -1,5 +1,5 @@
-import requests
-from bs4 import BeautifulSoup as Bsoup
+from selenium import webdriver
+from selenium.webdriver.common.by import By
 
 class daraz_scraper:
     def __init__(self, url, parameter):
@@ -8,15 +8,10 @@ class daraz_scraper:
 
     def scrape(self):
         url_updated = f'{self.url}{self.parameter.replace(" ", "+")}'     
-        print(url_updated)   
-        response = requests.get(url_updated)
-        print(response)
-        if response.status_code in (200, 503):
-            body = response.text
-            print(body)
-        else:
-            print('error')
+        print(url_updated)
+        browser = webdriver.Chrome()   
+        browser.get(url_updated)
 
-
-scraper = daraz_scraper("https://www.daraz.pk/catalog/?q=", "macbook pro 2021")
-scraper.scrape()
+        product_divs = browser.find_elements(By.XPATH, '//div[@class="gridItem--Yd0sa"]')
+        for product_div in product_divs:
+            print(product_div.get_attribute('a'))

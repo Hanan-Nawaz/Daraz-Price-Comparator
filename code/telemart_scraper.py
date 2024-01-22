@@ -1,5 +1,7 @@
-import requests
-from bs4 import BeautifulSoup as Bsoup
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.common.by import By
+from selenium import webdriver
 
 class telemart_scraper:
     def __init__(self, url, parameter):
@@ -9,14 +11,11 @@ class telemart_scraper:
     def scrape(self):
         url_updated = f'{self.url}{self.parameter.replace(" ", "%20")}'     
         print(url_updated)   
-        response = requests.get(url_updated)
-        print(response)
-        if response.status_code in (200, 503):
-            body = response.text
-            print(body)
-        else:
-            print('error')
+        
+        browser = webdriver.Chrome()
+        browser.get(url_updated)
+        browser.maximize_window()
 
-
-scraper = telemart_scraper("https://www.telemart.pk/search?query=", "macbook pro 2021")
-scraper.scrape()
+        wait = WebDriverWait(browser, 10)
+        element = wait.until(EC.presence_of_element_located((By.XPATH, '//div[@class="grid grid-cols-12 border-t"]'))) 
+        print(element)
