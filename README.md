@@ -1,30 +1,30 @@
-# E-commerce Price Comparator🌐🛍️
+# Daraz Price Comparator🌐🛍️
 
-Welcome to the E-commerce Price Comparator repository! 🌐🛍️ This project automates the search and comparison of prices across various products on leading platforms Telemart and Daraz in Pakistan🇵🇰. Using Python, Requests, BeautifulSoup, and Airflow, it simplifies the task of finding budget-friendly deals. Shop smartly with this efficient tool!
+Welcome to the Daraz Price Comparator repository! 🌐🛍️ This project automates price search and comparison on Daraz across Pakistan, Nepal, Sri Lanka, and Bangladesh. Powered by Python, Requests, BeautifulSoup, and Airflow, it simplifies the task of finding budget-friendly deals. Shop smartly with this efficient tool! 💡🛒
 
-<img src="/process-imgs/ecommerce-product-comparator-logo.gif" width="100%" height="400px" />
+<img src="/process-imgs/daraz-price-comparator-logo.gif" width="100%" height="400px" />
 
 ## Overview
 
-<img src="/process-imgs/ecommerce-product-comparator-process.jpg" width="100%" height="400px" />
+<img src="/process-imgs/daraz-price-comparator-process.png" width="100%" height="400px" />
 
 ### Core Features
 
-1. **Dynamic E-commerce Search**: After user input, Initiate a Laptop search on Telemart and Daraz.
+1. **Dynamic E-commerce Search**: After user input, Initiate a Product search on Daraz.
 
-2. **Automated Price Comparison**: The scraper automates laptop searches and compares prices across multiple listings.
+2. **Automated Price Comparison**: The scraper automates Product searches and compares prices across multiple listings.
 
 3. **Airflow Workflow**: Integrated with Apache Airflow for scheduled and automated execution.
 
-4. **Data Storage**: Extracted laptop details and prices are stored in a structured format.
+4. **Data Storage**: Extracted Product details and prices are stored in a structured format.
 
 ## Project Process
 
-This repository contains the code and configuration for the E-commerce Price Comparator🌐🛍️ project. The workflow involves initiating a search on e-commerce platforms, extracting first page product details, and comparing prices. The process is orchestrated using Airflow for automation.
+This repository houses the code and configuration for the Daraz Price Comparator🌐🛍️ project. The workflow encompasses initiating a search on Daraz across Pakistan, Nepal, Sri Lanka, and Bangladesh. It extracts details from the first page and efficiently compares prices. The entire process is seamlessly orchestrated using Airflow for automation, ensuring a hassle-free shopping experience. 💻🔄🛒
 
 ### 1. E-commerce Search
 
-- User enter its desired product name, Initiating a Laptop search on Telemart and Daraz (Only first page).
+- User enter its desired product name, Initiating a Product search on Daraz (Only first page).
 
 ### 2. Web Scraping
 
@@ -32,7 +32,7 @@ This repository contains the code and configuration for the E-commerce Price Com
 
 ### 3. Data Comparison (ETL)
 
-- Extracted data is compared to identify the laptop with the lowest price.
+- Extracted data is compared to identify the Product with the lowest price.
 - We compare data of both platforms, Converting Currency and other relevant parameters and store in MongoDb.
 
 ### 4. Airflow Integration
@@ -47,13 +47,12 @@ This repository contains the code and configuration for the E-commerce Price Com
 
 ## File Structure
 
-- `ecommerce-product-comparator/`: Contains the code and configuration for the E-commerce Price Comparator🌐🛍️ project.
+- `ecommerce-product-comparator/`: Contains the code and configuration for the Daraz Price Comparator🌐🛍️ project.
   - `process-imgs/`: Contains helping images related to the project.
     - `ecommerce-product-comparator-logo.jpg`: Logo image for the project.
     - `ecommerce-product-comparator-process.jpg`: Process/Roadmap image for the project.
   - `main.py`: Contains code, generally calling other classes.
   - `code/`: Conatins all the code files.
-    - `telemart_scraper.py`: Conatins code to scrape from Telemart.
     - `daraz_scraper.py`: Conatins code to scrape from Daraz.
     - `extract.py`: Contains code to call both scrapers.
     - `transform.py`: Contains code to implement Extract, Transform and Load.
