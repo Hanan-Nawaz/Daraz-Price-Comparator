@@ -1,6 +1,6 @@
 
 import sys
-sys.path.append("/Users/HananNawaz/Documents/LaptopScraper/code")
+sys.path.append("D:\Data Engineering Projects\LaptopScraper\code")
 
 from extract import extract
 

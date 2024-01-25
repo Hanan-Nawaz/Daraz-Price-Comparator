@@ -1,9 +1,9 @@
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 from selenium import webdriver
 
 class telemart_scraper:
+    e_path = r'C:\chromedriver\chromedriver.exe'
+
     def __init__(self, url, parameter):
         self.url = url
         self.parameter = parameter
@@ -12,10 +12,13 @@ class telemart_scraper:
         url_updated = f'{self.url}{self.parameter.replace(" ", "%20")}'     
         print(url_updated)   
         
-        browser = webdriver.Chrome()
+        chrome_options = webdriver.ChromeOptions()
+        chrome_options.add_argument(f'--webdriver={self.e_path}')
+        chrome_options.add_experimental_option("detach", True)
+        browser = webdriver.Chrome(options=chrome_options)
         browser.get(url_updated)
         browser.maximize_window()
 
-        wait = WebDriverWait(browser, 10)
-        element = wait.until(EC.presence_of_element_located((By.XPATH, '//div[@class="grid grid-cols-12 border-t"]'))) 
-        print(element)
+        elements = browser.find_elements(By.XPATH, '//div[@class="grid grid-cols-12 border-t"]')
+        for element in elements:
+            print(element.text)
