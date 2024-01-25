@@ -1,6 +1,6 @@
 # E-commerce Price Comparator🌐🛍️
 
-Welcome to the E-commerce Price Comparator repository! 🌐🛍️ This project automates the search and comparison of prices across various products on leading platforms Amazon and Daraz in Pakistan🇵🇰. Using Python, Requests, BeautifulSoup, and Airflow, it simplifies the task of finding budget-friendly deals. Shop smartly with this efficient tool!
+Welcome to the E-commerce Price Comparator repository! 🌐🛍️ This project automates the search and comparison of prices across various products on leading platforms Amazon and Wallmart. Using Python, Requests, BeautifulSoup, and Airflow, it simplifies the task of finding budget-friendly deals. Shop smartly with this efficient tool!
 
 <img src="/process-imgs/ecommerce-product-comparator-logo.gif" width="100%" height="400px" />
 
@@ -10,7 +10,7 @@ Welcome to the E-commerce Price Comparator repository! 🌐🛍️ This project 
 
 ### Core Features
 
-1. **Dynamic E-commerce Search**: After user input, Initiate a Product search on Amazon and Daraz.
+1. **Dynamic E-commerce Search**: After user input, Initiate a Product search on Amazon and Wallmart.
 
 2. **Automated Price Comparison**: The scraper automates Product searches and compares prices across multiple listings.
 
@@ -24,7 +24,7 @@ This repository contains the code and configuration for the E-commerce Price Com
 
 ### 1. E-commerce Search
 
-- User enter its desired product name, Initiating a Product search on Amazon and Daraz (Only first page).
+- User enter its desired product name, Initiating a Product search on Amazon and Wallmart (Only first page).
 
 ### 2. Web Scraping
 
@@ -53,8 +53,8 @@ This repository contains the code and configuration for the E-commerce Price Com
     - `ecommerce-product-comparator-process.jpg`: Process/Roadmap image for the project.
   - `main.py`: Contains code, generally calling other classes.
   - `code/`: Conatins all the code files.
-    - `Amazon_scraper.py`: Conatins code to scrape from Amazon.
-    - `daraz_scraper.py`: Conatins code to scrape from Daraz.
+    - `amazon_scraper.py`: Conatins code to scrape from Amazon.
+    - `wallmart_scraper.py`: Conatins code to scrape from Wallmart.
     - `extract.py`: Contains code to call both scrapers.
     - `transform.py`: Contains code to implement Extract, Transform and Load.
     - `load_to_mongodb.py`: Conatins code to load data into MongoDb using PyMongo.
