@@ -1,12 +1,12 @@
-# Laptop Scraper
+# E-commerce Price Comparator🌐🛍️
 
-Welcome to the Laptop Scraper repository! This project automates the process of searching and comparing laptop prices on popular e-commerce platforms Telemart and Daraz in Pakistan🇵🇰. Utilizing Python, Requests, BeautifulSoup, and Airflow, it streamlines the task of finding affordable laptops.
+Welcome to the E-commerce Price Comparator repository! 🌐🛍️ This project automates the search and comparison of prices across various products on leading platforms Telemart and Daraz in Pakistan🇵🇰. Using Python, Requests, BeautifulSoup, and Airflow, it simplifies the task of finding budget-friendly deals. Shop smartly with this efficient tool!
 
-<img src="/process-imgs/laptop-scraper-logo.gif" width="100%" height="400px" />
+<img src="/process-imgs/ecommerce-product-comparator-logo.gif" width="100%" height="400px" />
 
 ## Overview
 
-<img src="/process-imgs/laptop-scraper-process.jpg" width="100%" height="400px" />
+<img src="/process-imgs/ecommerce-product-comparator-process.jpg" width="100%" height="400px" />
 
 ### Core Features
 
@@ -20,15 +20,15 @@ Welcome to the Laptop Scraper repository! This project automates the process of 
 
 ## Project Process
 
-This repository contains the code and configuration for the Laptop Scraper project. The workflow involves initiating a search on e-commerce platforms, extracting first page laptop details, and comparing prices. The process is orchestrated using Airflow for automation.
+This repository contains the code and configuration for the E-commerce Price Comparator🌐🛍️ project. The workflow involves initiating a search on e-commerce platforms, extracting first page product details, and comparing prices. The process is orchestrated using Airflow for automation.
 
 ### 1. E-commerce Search
 
-- User enter its desired laptop name, Initiating a Laptop search on Telemart and Daraz (Only first page).
+- User enter its desired product name, Initiating a Laptop search on Telemart and Daraz (Only first page).
 
 ### 2. Web Scraping
 
-- Python scripts leverage Requests and BeautifulSoup for web scraping to extract laptop details and prices from both platforms.
+- Python scripts leverage Requests and BeautifulSoup for web scraping to extract product details and prices from both platforms.
 
 ### 3. Data Comparison (ETL)
 
@@ -47,10 +47,10 @@ This repository contains the code and configuration for the Laptop Scraper proje
 
 ## File Structure
 
-- `laptop_scraper/`: Contains the code and configuration for the Laptop Scraper project.
+- `ecommerce-product-comparator/`: Contains the code and configuration for the E-commerce Price Comparator🌐🛍️ project.
   - `process-imgs/`: Contains helping images related to the project.
-    - `laptop-scraper-logo.jpg`: Logo image for the project.
-    - `laptop-scraper-process.jpg`: Process/Roadmap image for the project.
+    - `ecommerce-product-comparator-logo.jpg`: Logo image for the project.
+    - `ecommerce-product-comparator-process.jpg`: Process/Roadmap image for the project.
   - `main.py`: Contains code, generally calling other classes.
   - `code/`: Conatins all the code files.
     - `telemart_scraper.py`: Conatins code to scrape from Telemart.
