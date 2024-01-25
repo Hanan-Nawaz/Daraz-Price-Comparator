@@ -6,7 +6,7 @@ Welcome to the E-commerce Price Comparator repository! 🌐🛍️ This project 
 
 ## Overview
 
-<img src="/process-imgs/ecommerce-product-comparator-process.jpg" width="100%" height="400px" />
+<img src="/process-imgs/ecommerce-product-comparator-process.png" width="100%" height="400px" />
 
 ### Core Features
 
