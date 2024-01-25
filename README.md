@@ -20,11 +20,11 @@ Welcome to the E-commerce Price Comparator repository! 🌐🛍️ This project 
 
 ## Project Process
 
-This repository contains the code and configuration for the E-commerce Price Comparator🌐🛍️ project. The workflow involves initiating a search on e-commerce platforms, extracting first page product details, and comparing prices. The process is orchestrated using Airflow for automation.
+This repository contains the code and configuration for the E-commerce Price Comparator🌐🛍️ project. The workflow involves initiating a search on e-commerce platforms, extracting first ten pages product details, and comparing prices. The process is orchestrated using Airflow for automation.
 
 ### 1. E-commerce Search
 
-- User enter its desired product name, Initiating a Product search on Amazon and Wallmart (Only first page).
+- User enter its desired product name, Initiating a Product search on Amazon and Wallmart (Only first ten pages).
 
 ### 2. Web Scraping
 
