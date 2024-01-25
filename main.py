@@ -4,7 +4,7 @@ sys.path.append("D:\Data Engineering Projects\LaptopScraper\code")
 
 from extract import extract
 
-query_parameter = input('Enter name of Laptop.... : ')
+query_parameter = input('Enter name of Product.... : ')
 
 extract_ = extract(query_parameter)
 extract_.extracting()
