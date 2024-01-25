@@ -10,13 +10,13 @@ Welcome to the E-commerce Price Comparator repository! 🌐🛍️ This project 
 
 ### Core Features
 
-1. **Dynamic E-commerce Search**: After user input, Initiate a Laptop search on Telemart and Daraz.
+1. **Dynamic E-commerce Search**: After user input, Initiate a Product search on Telemart and Daraz.
 
-2. **Automated Price Comparison**: The scraper automates laptop searches and compares prices across multiple listings.
+2. **Automated Price Comparison**: The scraper automates Product searches and compares prices across multiple listings.
 
 3. **Airflow Workflow**: Integrated with Apache Airflow for scheduled and automated execution.
 
-4. **Data Storage**: Extracted laptop details and prices are stored in a structured format.
+4. **Data Storage**: Extracted Product details and prices are stored in a structured format.
 
 ## Project Process
 
@@ -24,7 +24,7 @@ This repository contains the code and configuration for the E-commerce Price Com
 
 ### 1. E-commerce Search
 
-- User enter its desired product name, Initiating a Laptop search on Telemart and Daraz (Only first page).
+- User enter its desired product name, Initiating a Product search on Telemart and Daraz (Only first page).
 
 ### 2. Web Scraping
 
@@ -32,7 +32,7 @@ This repository contains the code and configuration for the E-commerce Price Com
 
 ### 3. Data Comparison (ETL)
 
-- Extracted data is compared to identify the laptop with the lowest price.
+- Extracted data is compared to identify the Product with the lowest price.
 - We compare data of both platforms, Converting Currency and other relevant parameters and store in MongoDb.
 
 ### 4. Airflow Integration
