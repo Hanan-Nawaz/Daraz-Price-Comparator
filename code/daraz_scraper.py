@@ -23,8 +23,8 @@ class daraz_scraper:
         browser.maximize_window()
         
         with open(f'daraz_data_{self.country}.csv', 'w', encoding='UTF-8') as daraz_file:
-            print('Scraping from Daraz ', self.country)
-            daraz_file.write('name,price,rating,total_sold,link' + '\n')
+            print('Scraping from Daraz -', self.country)
+            daraz_file.write('name,price,rating,link' + '\n')
             products = browser.find_elements(By.XPATH, '//div[@class="gridItem--Yd0sa"]')
 
             for product in (products):
@@ -39,18 +39,11 @@ class daraz_scraper:
                 except NoSuchElementException:
                     rating_ = 'N/A'
                 
-                total_sold = ''
-
-                try:
-                    product_sold = product.find_element(By.XPATH, './/a[@id="id-a-link"]')
-                    total_sold = product_sold.text
-                except NoSuchElementException:
-                    total_sold = "N/A"
 
                 product_link = product.find_element(By.XPATH, './/a[@id="id-a-link"]')
                 
 
-                formated_line = f'{product_name.text.replace(",", "")},{product_price.text.replace(",", "")},{rating_},{total_sold},{product_link.get_attribute("href")}'
+                formated_line = f'{product_name.text.replace(",", "")},{product_price.text.replace(",", "")},{rating_},{product_link.get_attribute("href")}'
 
                 daraz_file.write(formated_line + '\n')
 
