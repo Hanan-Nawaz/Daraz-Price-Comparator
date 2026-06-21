@@ -1,5 +1,11 @@
 # Daraz Price Comparator🌐🛍️
 
+
+![Repository Archived](https://img.shields.io/badge/repository-archived-red)
+
+> This repository is archived and no longer actively maintained.
+
+
 Welcome to the Daraz Price Comparator repository! 🌐🛍️ This project automates price search and comparison on Daraz across Pakistan, Nepal, Sri Lanka, and Bangladesh. Powered by Python, Requests, BeautifulSoup, and Airflow, it simplifies the task of finding budget-friendly deals. Shop smartly with this efficient tool! 💡🛒
 
 <img src="/process-imgs/daraz-price-comparator-logo.gif" width="100%" height="400px" />
